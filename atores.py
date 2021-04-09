@@ -8,7 +8,7 @@ DESTRUIDO = 'Destruido'
 ATIVO = 'Ativo'
 GRAVIDADE = 10  # m/s^2
 
-
+#Teste de push - linha alterada
 class Ator():
     """
     Classe que representa um ator. Ele representa um ponto cartesiano na tela.
