@@ -13,12 +13,17 @@ if __name__ == '__main__':
     # print(Pessoa.cumprimentar(p))
     # print(id(p))
     # print(p.cumprimentar())
-    Fco = Pessoa(Filhos)
+    Fco = Pessoa(Filhos, idade= 35)
     Fco.nome = 'Francisco'
     Fco.altura = 1.85
-    print(Fco.nome, Fco.altura)
+    Fco.sobrenome = 'Araujo'
+    print(Fco.__dict__)
+    print(Fco.nome, Fco.sobrenome, Fco.altura, Fco.idade)
+
     for filho in Fco.filhos:
         print(filho.nome, filho.idade)
+    del Fco.filhos
+    print(Fco.__dict__)
 
 
 
